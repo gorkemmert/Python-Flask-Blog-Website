@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+
+<h3>Profil Düzenle</h3>
+<hr>
+<form method='post'>
+    {{ render_field(form.username,class = 'form-control') }}
+    {{ render_field(form.experience,class = 'form-control') }}
+    {{ render_field(form.eng_level,class = 'form-control') }}
+    {{ render_field(form.skill1,class = 'form-control') }}
+    {{ render_field(form.skill2,class = 'form-control') }}
+    {{ render_field(form.skill3,class = 'form-control') }}
+    {{ render_field(form.ins,class = 'form-control') }}
+    {{ render_field(form.twit,class = 'form-control') }}
+    {{ render_field(form.linked,class = 'form-control') }}
+    <button class="btn btn-primary" type="submit">Düzenle</button>
+
+
+
+</form>
+
+{% endblock  %}
